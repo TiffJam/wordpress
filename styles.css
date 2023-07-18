@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+}
+
+.header {
+height: 100px;
+background-color: lightgrey;
+}
+
+.header__menu{
+display: flex;
+justify-content: space-around;
+height: 100%;
+align-items: center;
+}

@@ -1,0 +1,116 @@
+*{
+  margin-left: 0%;
+  margin-right: 0%;
+  /* border: 2px solid; */
+  /* padding: 1px; */
+  text-align: center;
+  background-color: #D3D3D3;
+  /* #FFFAF0; */
+}
+
+
+
+label {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    text-align: right; 
+    line-height: 26px;
+    margin-bottom: 0px;
+    margin-right: 50px;
+  }
+  
+  input {
+    height: 20px;
+    flex: 0 0 200px;
+    margin-left: 10px;
+  }
+
+  input[type="radio"] {
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 300px;
+    justify-content: right;
+    text-align: right;
+    height: 15px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: -100px;
+  }
+
+
+
+  .column {
+    float: left;
+    width: 50%;
+    max-width: 500px;
+  }
+
+  .row {
+    max-width: 1020px;
+    margin: 0 auto;
+  }
+
+  /* Clear floats after the columns */ 
+
+  .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+#botonPrincipal {
+  background-color: lightgreen; 
+  border-color:greenyellow;
+  width: 250px;
+  height: 35px;
+}
+
+
+#cancelarEdicion {
+  background-color: lightgoldenrodyellow; 
+  border-color:yellow;
+  width: 150px;
+  height: 35px;
+
+}
+
+
+
+#editar {
+  background-color: lightgoldenrodyellow; 
+  border-color:yellow;
+  width: 100px;
+}
+
+#eliminar {
+  background-color: lightcoral; 
+  border-color:deeppink;
+  width: 100px;
+}
+
+
+
+.table {
+ margin-left: auto;
+ margin-right: auto;
+ width: 50%;
+}
+
+
+td {
+  text-align: left;
+}
+
+
+
+/*   No funcionó
+  .row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 50%;
+  } */

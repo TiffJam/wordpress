@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <h1>Súper Registro de Estudiantes Bacanos <br>(SUPRESBA-TALENDIG-DOMINICANA)</br></h1>
+    <hr style="padding: 1px;">
+    <h3>1) Módulo de Agregar y Editar Estudiantes</h3>
+    
+    <p>*Tip: usar la tecla TAB para continuar al siguiente campo y las teclas (flechas) ARRIBA / ABAJO para seleccionar el curso.</p>
+  
+    <div class="row">
+    <form id="form" name="form">
+      <div class="column" >
+        <br>
+        
+        <label style="margin-bottom: 10px;">
+          Nombre:<input type="text" value="" id="nombre"/>
+        </label><br>
+
+        <label style="margin-bottom: 10px;">
+          Apellido:<input type="text" value="" id="apellido"/>
+        </label><br>
+
+        <label style="margin-bottom: 10px;">
+          Matrícula:<input type="number" value="" id="matricula" />
+        </label><br>      <!-- min="19900000" max="20249999"  No sirve en este caso, sólo determina el rango al usar las flechas arriba/abajo.  -->
+        
+        <label style="margin-bottom: 10px;">
+          Nota:<input type="number" value="" id="nota"/>
+        </label>
+        </div>
+        
+        
+      
+
+        <div class="column" id="radioSelectorCurso">
+        <br>
+          <p style="margin-top: 0px;">Curso:</p>
+        
+        <label class="stylelabelradio">
+          Full Stack Web Dev
+          <input type="radio" value="Full Stack" id="web" name="curso"/>
+        </label><br>
+
+        <label class="stylelabelradio">
+          Data Science
+          <input type="radio" value="Data Science" id="data" name="curso"/>
+        </label><br>
+
+        <label class="stylelabelradio">
+          DevOps
+          <input type="radio" value="DevOps" id="devops" name="curso"/>
+        </label><br>
+
+        <label class="stylelabelradio">
+          UX Designer
+          <input type="radio" value="UX Designer" id="ux" name="curso"/>
+        </label><br>
+      </div>
+    </div>
+      <br>
+    
+      
+        <div>
+        <input type="button" value="Agregar Estudiante" 
+        id="botonPrincipal" onclick="agregarEditar(), hideButton()"/>
+        
+        
+        <input type="reset" value="Cancelar Edición" 
+        id="cancelarEdicion" style="display:none" onclick="hideButton()"/>
+
+        </div>
+      </form>
+      <br>
+      <br>
+      <hr style="padding: 1px;">
+
+      <h3>2) Módulo de Visualizar y Eliminar Estudiantes</h3>
+ 
+    <div id="table"></div>
+    
+  <!-- 
+      <table border="1">
+      <thead>
+        <th>#</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Matrícula</th>
+        <th>Curso</th>
+        <th>Nota</th>
+        <th>Acciones</th>
+      </thead>
+
+      <tbody id="tbdata">
+       
+      </tbody>
+    </table> -->
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
+
+
+
+
+ <!-- 
+        <tr>
+            <td>Luis</td>
+            <td>Soto</td>
+            <td><input type="button" value="Editar">
+                <input type="button" value="Eliminar"></td>
+        </tr>
+
+        <tr>
+            <td>Juan</td>
+            <td>Perez</td>
+            <td><input type="button" value="Editar">
+                <input type="button" value="Eliminar"></td>
+        </tr>
+
+        -->
+
+
+        <!-- id="radioSelectorCurso" 
+      <div class="column" > 
+        <input type="radio" id="web" name="curso" value="Full Stack">Full Stack
+        <input type="radio" id="data" name="curso" value="Data Science">Data Science
+        <input type="radio" id="devops" name="curso" value="Dev Ops">DevOps
+        <input type="radio" id="ux" name="curso" value="UX Designer">UX Designer
+      </div>    
+      -->

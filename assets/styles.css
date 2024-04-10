@@ -1,0 +1,25 @@
+
+
+.main-container {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    text-align: center;
+}
+
+.sidebar-logo {
+    width: 100%;
+}
+
+.topics{
+}
+
+.scale{
+    width: 100%;
+    text-align: center;
+    margin: 1rem 0;
+    scale: 2;
+    color: red;
+}
